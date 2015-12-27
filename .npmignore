@@ -1,0 +1,14 @@
+build
+coverage
+doc
+test
+appveyor.yml
+bower.json
+CONTRIBUTING.md
+.editorconfig
+.eslintrc
+.eslintignore
+.jscsrc
+.jshintrc
+.npmignore
+.travis.yml

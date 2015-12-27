@@ -1,0 +1,28 @@
+{
+  "name": "jasmine-loud",
+  "version": "1.0.0",
+  "authors": [
+    "Ruslan Sagitov <rs@ruslansagitov.name>"
+  ],
+  "description": "Jasmine matchers for Loud, web accessibility testing helper",
+  "main": "./lib/jasmine-loud.js",
+  "keywords": [
+    "jasmine",
+    "jasmine-plugin",
+    "jasmine-matchers",
+    "loud"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ruslansagitov/jasmine-loud",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "doc",
+    "test",
+    "appveyor.yml",
+    "CONTRIBUTING.md",
+    "package.json",
+    "README.md"
+  ]
+}

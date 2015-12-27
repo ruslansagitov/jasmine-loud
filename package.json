@@ -1,0 +1,44 @@
+{
+  "name": "jasmine-loud",
+  "version": "1.0.0",
+  "description": "Jasmine matchers for Loud, web accessibility testing helper",
+  "keywords": [
+    "jasmine",
+    "jasmine-plugin",
+    "jasmine-matchers",
+    "loud"
+  ],
+  "author": "Ruslan Sagitov <rs@ruslansagitov.name>",
+  "license": "MIT",
+  "homepage": "https://github.com/ruslansagitov/jasmine-loud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruslansagitov/jasmine-loud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruslansagitov/jasmine-loud/issues",
+    "email": "rs@ruslansagitov.name"
+  },
+  "main": "./lib/jasmine-loud.js",
+  "scripts": {
+    "test": "npm run-script lint && npm run-script check-writing && npm run-script security && npm run-script karma-test",
+    "karma-test": "karma start ./test/karma.conf.js --single-run",
+    "lint": "eslint . && jscs .",
+    "check-writing": "write-good README.md doc/index.rst && write-good CONTRIBUTING.md --no-tooWordy",
+    "security": "nsp check",
+    "coverage": "KARMA_COVERAGE=html karma start ./test/karma.conf.js --single-run",
+    "doc": "sphinx-build -b html doc/ build/doc/"
+  },
+  "devDependencies": {
+    "es5-shim": "^4.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "0.13.15",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.6",
+    "karma-loud": "^1.0.4",
+    "loud": "^0.8.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  }
+}
