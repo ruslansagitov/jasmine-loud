@@ -27,4 +27,4 @@ before_script:
 after_success:
   - npm install codeclimate-test-reporter@^0.1.1
   - KARMA_COVERAGE=lcovonly KARMA_BROWSERS=Firefox karma start ./test/karma.conf.js --single-run
-  - cat ./coverage/*/lcov.info | ./node_modules/.bin/codeclimate
+  - cat ./coverage/*/lcov.info | ./node_modules/.bin/codeclimate-test-reporter
