@@ -31,3 +31,13 @@ after_success:
   - KARMA_COVERAGE=lcovonly KARMA_BROWSERS=Firefox karma start ./test/karma.conf.js --single-run
   - cat ./coverage/*/lcov.info | ./node_modules/.bin/codeclimate-test-reporter
   - cat ./coverage/*/lcov.info | ./node_modules/.bin/coveralls
+
+deploy:
+  - provider: npm
+    email: rs@ruslansagitov.name
+    api_key:
+      secure: sXXN88Yg7xllAsM1dWauG57nFlrbSA28FQU2rBJF+bMAN4bj7M4n7O6rRgISu7PZ6Nz1nPPEg8/bECNgYwdF/G7NZX4tgo+ERt9wQGYyhN6ebJL6TNtfyh803o/aK9XJFUirdctzsVkMS1ItwBG7v27ocEx6APgrvCWXxoH21OSsBMORJEGznugHYIZ8ucBI59i2+huoc8usxD89zkuCt8+VSNHHNpSFVuV4/RwSb5rkDGd12u1r2svnH5crUO36BdWwtNjznk0H+E0hCLTo0K6Ye5wk3FDmIO9adxgsLsOQAOaqsMf3i8V/zYUjg9w0MuCN0WWBj/BB2kWTNdQZecjRBIC20DOXAF006gnaPtL5B2DfVYvYssarGu1/Li3mgH3gRyE6NNuXEHQxMhswa3xaSGqDjsluV+k24U9M1KUqgkoPHfSWj0Y8Hpn6FbXP9gXqxHt9a4FagAOc0JQa3YwyMR2I5gJ7NF/jLhSAyxDV7Cv1utdMc2LHmMq1pyF7BMySb7eU9mMByyVtRWRhFbECLXUhA2maFWU+0VNREBGlzOX7uZ0QXETPImvv4p6rvZ2pgwhzrNiVKlK4FJZ+XZ/W7ZYHqOs7+dZTlUJ7VrOQcGoZvj74+pcZ1i29eSGzwl4nJm1ItG7eM7vSHzJOHb7grEfgRXqzH+JvyZn7cOU=
+    on:
+      all_branches: true
+      tags: true
+      repo: ruslansagitov/jasmine-loud
