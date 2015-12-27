@@ -1,4 +1,4 @@
-# jasmine-loud
+# jasmine-loud [![Build Status](https://travis-ci.org/ruslansagitov/jasmine-loud.svg?branch=master)](https://travis-ci.org/ruslansagitov/jasmine-loud) [![Coverage Status](https://coveralls.io/repos/ruslansagitov/jasmine-loud/badge.svg)](https://coveralls.io/r/ruslansagitov/jasmine-loud) [![Code Climate](https://codeclimate.com/github/ruslansagitov/jasmine-loud/badges/gpa.svg)](https://codeclimate.com/github/ruslansagitov/jasmine-loud)
 
 [Jasmine][] matchers for [Loud][], web accessibility testing helper
 
