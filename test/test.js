@@ -6,7 +6,11 @@ describe('jasmine-loud', function() {
         this.button.innerHTML = 'Join';
     });
 
-    it('works', function() {
+    it('works for positive', function() {
         expect(this.button).toBeSaid(['Join', 'button']);
+    });
+
+    it('works for negative', function() {
+        expect(this.button).not.toBeSaid(['button']);
     });
 });
