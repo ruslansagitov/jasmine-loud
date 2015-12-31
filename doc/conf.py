@@ -1,4 +1,4 @@
-# -*- coding: utf8 -*-
+# -*- coding: utf-8 -*-
 
 project = 'jasmine-loud'
 copyright = u'2015, Ruslan Sagitov'
