@@ -4,8 +4,8 @@
 
 ## Getting Started
 
-Get a release tarball, or clone the repository, or use [npm][] and
-[browserify][], or [bower][]:
+Get a release tarball, or clone the repository, or use [npm][],
+or [bower][]:
 
 ```
 bower install jasmine-loud --save-dev
@@ -37,5 +37,4 @@ describe('jasmine-loud', function() {
  [Jasmine]: <http://jasmine.github.io/> "Jasmine — Behavior-Driven JavaScript"
  [Loud]: <https://github.com/ruslansagitov/loud> "Loud — Web accessibility testing helper"
  [npm]: <https://github.com/npm/npm> "npm — A package manager for JavaScript"
- [browserify]: <https://github.com/substack/node-browserify> "browserify — Browser-side require() the Node.js way"
  [bower]: <https://github.com/bower/bower> "Bower — A package manager for the web"
