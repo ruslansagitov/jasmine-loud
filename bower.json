@@ -5,6 +5,7 @@
   ],
   "description": "Jasmine matchers for Loud, web accessibility testing helper",
   "main": "./lib/jasmine-loud.js",
+  "moduleType": "globals",
   "keywords": [
     "jasmine",
     "jasmine-plugin",
