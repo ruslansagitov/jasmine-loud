@@ -21,7 +21,6 @@ module.exports = function(config) {
         frameworks: ['jasmine', 'loud'],
         browsers: browsers,
         files: [
-            require.resolve('es5-shim'),
             '../lib/jasmine-loud.js',
             'test.js'
         ],
