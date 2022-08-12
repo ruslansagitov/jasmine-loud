@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(config) {
-    var browsers = [],
+    let browsers = [],
         plugins = [
             'karma-coverage',
             'karma-jasmine',
@@ -11,15 +11,15 @@ module.exports = function(config) {
     if (process.env.KARMA_BROWSERS) {
         browsers = process.env.KARMA_BROWSERS.split(',');
 
-        browsers.forEach(function(name) {
-            plugins.push('karma-' + name.toLowerCase() + '-launcher');
-        });
+        for (let name of browsers) {
+            plugins.push(`karma-${name.toLowerCase()}-launcher`);
+        }
     }
 
     config.set({
-        plugins: plugins,
+        plugins,
         frameworks: ['jasmine', 'loud'],
-        browsers: browsers,
+        browsers,
         files: [
             '../lib/jasmine-loud.js',
             'test.js'
@@ -34,7 +34,10 @@ module.exports = function(config) {
             },
             coverageReporter: {
                 type: process.env.KARMA_COVERAGE,
-                dir: '../coverage/'
+                dir: '../coverage/',
+                subdir(browser) {
+                    return browser.toLowerCase().split(/[ /-]/)[0];
+                }
             },
             reporters: ['dots', 'coverage']
         });
