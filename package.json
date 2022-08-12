@@ -1,6 +1,6 @@
 {
   "name": "jasmine-loud",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jasmine matchers for Loud, web accessibility testing helper",
   "keywords": [
     "jasmine",
