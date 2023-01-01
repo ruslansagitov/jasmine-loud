@@ -28,16 +28,16 @@
     "coverage": "KARMA_COVERAGE=html karma start ./test/karma.conf.js --single-run"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
-    "jasmine-core": "^4.3.0",
-    "karma": "^6.4.0",
+    "eslint": "^8.31.0",
+    "jasmine-core": "^4.5.0",
+    "karma": "^6.4.1",
     "karma-chrome-launcher": "^3.1.1",
     "karma-cli": "^2.0.0",
     "karma-coverage": "^2.2.0",
     "karma-firefox-launcher": "^2.1.2",
     "karma-jasmine": "^5.1.0",
-    "karma-loud": "^1.0.5",
-    "loud": "^0.9.2",
+    "karma-loud": "^1.0.6",
+    "loud": "^0.9.3",
     "write-good": "^1.0.8"
   },
   "engines": {
